@@ -1,0 +1,9 @@
+{
+    "selectScope": "Select Scope",
+    "deselectScope": "Deselect Scope",
+    "selectedScope": "Selected Scope",
+    "expandAllChildren": "Expand All Children",
+    "collapseAllChildren": "Collapse All Children",
+    "selectNode": "Select Node",
+    "selectedNode": "Selected Node"
+}

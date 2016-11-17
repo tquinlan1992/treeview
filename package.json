@@ -1,0 +1,59 @@
+{
+  "name": "treeview",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "gulp test",
+    "browserify-treeview": "gulp browserify-treeview",
+    "browserify-sample": "gulp browserify-sample",
+    "copy-sample": "gulp copy-sample",
+    "build-sample": "concurrently -r 'npm run browserify-sample' 'npm run copy-sample'",
+    "jshint": "gulp jshint",
+    "nodemon-server": "nodemon build/sample/server.js",
+    "watch": "gulp watch",
+    "default": "concurrently -r 'npm run jshint' 'npm run browserify-treeview' 'npm run build-sample' 'npm run nodemon-server' 'npm run watch'"
+  },
+  "description": "treeview with checkboxes",
+  "main": "npmIndex/index.js",
+  "author": "",
+  "license": "ISC",
+  "jshintConfig": {
+    "esversion": 6,
+    "curly": true,
+    "forin": true,
+    "eqeqeq": true,
+    "eqnull": true,
+    "latedef": "nofunc",
+    "notypeof": true,
+    "undef": true,
+    "unused": true,
+    "node": true
+  },
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-animate": "^1.5.8",
+    "angular-aria": "^1.5.8",
+    "angular-material": "^1.1.1",
+    "async": "^2.0.1",
+    "babel-preset-es2015": "^6.14.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.1.0",
+    "concurrently": "^2.2.0",
+    "express": "^4.14.0",
+    "font-awesome": "^4.6.3",
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.1",
+    "gulp-ng-annotate": "^2.0.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-tape": "0.0.9",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.9.3",
+    "stringify": "^5.1.0",
+    "tap-colorize": "^1.2.0",
+    "tape": "^4.6.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.15.0"
+  }
+}
